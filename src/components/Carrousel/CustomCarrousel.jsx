@@ -91,7 +91,7 @@ const arrayObject = [
       iconCss3,
       iconBootstrap,
     ],
-    link: "https://my.inkup.io/Jose-Artist-Tattoo",
+    link: "https://joseignacioadamec.github.io/Rick_and_Morty/",
   },
   {
     img: angularProject,
