@@ -1,0 +1,127 @@
+.carrousel-row {
+  background-color: #181818;
+  padding-top: 60px;
+}
+
+.carrousel-row .text-project {
+  font-size: 48px !important;
+  color: #E1A87A;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.react-multi-carousel-item {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ height: 600px;
+}
+
+.slider p {
+  color: #E1A87A;
+  text-align: center;
+  font-size: 20px;
+}
+.slider {
+  margin: 0 20px;
+  overflow: "hidden";
+  padding: 2rem 0;
+  padding-top: 12px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.slider2 {
+  margin: 0 20px;
+  overflow: "hidden";
+  padding: 4px;
+  padding-top: 12px;
+  width: 100%;
+  max-width: 300px;
+  height: 100%;
+  max-height: 425px;
+}
+
+.slider2 img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  filter: brightness(110%) contrast(110%);
+}
+
+.icons-skills-carrousel {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.icon img {
+  width: 25px;
+  height: auto;
+  margin: 5px; 
+}
+
+.react-multi-carousel-list {
+  padding: 0rem 0 2rem 0;
+}
+
+.custom-dot-list-style button {
+  border: none;
+  background: rgb(255, 68, 68);
+}
+.react-multi-carousel-dot.react-multi-carousel-dot--active button {
+  background: rgb(255, 68, 68) !important;
+}
+
+.react-multiple-carousel__arrow--left::before {
+  content: "<" !important;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.react-multiple-carousel__arrow--right::before {
+  content: ">" !important;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+@media screen and (min-width: 1351px) and (max-width: 1550px) {
+  .slider2 {
+    max-height: 350px;
+  }
+}
+
+@media screen and (min-width: 1151px) and (max-width: 1350px) {
+  .slider2 {
+    max-height: 300px;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1150px) {
+  .slider2 {
+    max-height: 250px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 900px) {
+  .slider2 {
+    max-height: 325px;
+  }
+}
+
+@media screen and (min-width: 464px) and (max-width: 599px) {
+  .slider2 {
+    max-height: 275px;
+  }
+}
+
+@media screen and (max-width: 463px) {
+  .slider2 {
+    max-height: 375px;
+  }
+}

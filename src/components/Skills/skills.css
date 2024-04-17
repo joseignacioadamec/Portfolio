@@ -1,0 +1,287 @@
+.skills-row {
+  background-color: #181818;
+}
+
+.skills-container {
+  color: #E1A87A;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 24px;
+  padding-bottom: 60px;
+}
+
+.skills-container .skills-text-span {
+  font-size: 48px;
+  color: #E1A87A;
+}
+
+.icons-skills {
+  display: flex;
+  justify-content: center;
+  max-width: 650px;
+  flex-wrap: wrap;
+}
+
+.icons-skills .icon-js,
+.icon-react,
+.icon-redux,
+.icon-ts,
+.icon-html,
+.icon-css,
+.icon-sass,
+.icon-bootstrap,
+.icon-angular,
+.icon-git {
+  background-color: #3a3434;
+  border-radius: 8px;
+  width: 150px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 4px;
+  font-size: 20px;
+  padding: 6px;
+}
+
+.icons-skills .icon-js img,
+.icon-react img,
+.icon-redux img,
+.icon-ts img,
+.icon-html img,
+.icon-css img,
+.icon-sass img,
+.icon-bootstrap img,
+.icon-angular img,
+.icon-git img {
+  width: 25px;
+  margin-right: 8px;
+}
+
+.skills-container.visible .icon-js {
+  opacity: 0;
+  transform: scale(0) rotateY(360deg);
+  animation: showIcon 0.3s cubic-bezier(0.0, 0.0, 0.0, 0) forwards;
+}
+
+.skills-container.visible .icon-react {
+  opacity: 0;
+  transform: scale(0) rotateY(360deg);
+  animation: showIcon 0.4s cubic-bezier(0.0, 0.0, 0.0, 0) forwards;
+}
+
+.skills-container.visible .icon-redux {
+  opacity: 0;
+  transform: scale(0) rotateY(360deg);
+  animation: showIcon 0.5s cubic-bezier(0.0, 0.0, 0.0, 0) forwards;
+}
+
+.skills-container.visible .icon-ts {
+  opacity: 0;
+  transform: scale(0) rotateY(360deg);
+  animation: showIcon 0.6s cubic-bezier(0.0, 0.0, 0.0, 0) forwards;
+}
+
+
+.skills-container.visible .icon-html {
+  opacity: 0;
+  transform: scale(0) rotateY(360deg);
+  animation: showIcon 0.7s cubic-bezier(0.0, 0.0, 0.0, 0) forwards;
+}
+
+
+.skills-container.visible .icon-css{
+  opacity: 0;
+  transform: scale(0) rotateY(360deg);
+  animation: showIcon 0.8s cubic-bezier(0.0, 0.0, 0.0, 0) forwards;
+}
+
+.skills-container.visible .icon-sass {
+  opacity: 0;
+  transform: scale(0) rotateY(360deg);
+  animation: showIcon 0.9s cubic-bezier(0.0, 0.0, 0.0, 0) forwards;
+}
+
+.skills-container.visible .icon-bootstrap {
+  opacity: 0;
+  transform: scale(0) rotateY(360deg);
+  animation: showIcon 1s cubic-bezier(0.0, 0.0, 0.0, 0) forwards;
+}
+
+.skills-container.visible .icon-angular {
+  opacity: 0;
+  transform: scale(0) rotateY(360deg);
+  animation: showIcon 1.1s cubic-bezier(0.0, 0.0, 0.0, 0) forwards;
+}
+
+.skills-container.visible .icon-git {
+  opacity: 0;
+  transform: scale(0) rotateY(360deg);
+  animation: showIcon 1.2s cubic-bezier(0.0, 0.0, 0.0, 0) forwards;
+}
+
+@keyframes showIcon {
+  0% {
+    opacity: 0;
+    transform: scale(0) rotateY(360deg);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2) rotateY(180deg);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) rotateY(0deg);
+  }
+}
+
+.icon-js::after,
+.icon-react::after,
+.icon-redux::after,
+.icon-ts::after,
+.icon-html::after,
+.icon-css::after,
+.icon-sass::after,
+.icon-bootstrap::after,
+.icon-angular::after,
+.icon-git::after {
+  content: "JavaScript";
+  position: absolute;
+  top: 0;
+  right: 15px;
+  overflow: hidden;
+  color: transparent;
+  transition: color 0.5s ease;
+}
+
+.icon-react::after {
+  content: "React";
+  right: 35px;
+}
+
+.icon-redux::after,
+.icon-html::after {
+  content: "Redux";
+  right: 32px;
+}
+
+.icon-ts::after {
+  content: "TypeScript";
+}
+
+.icon-html::after {
+  content: "Html5";
+}
+
+.icon-css::after,
+.icon-sass::after {
+  content: "Css3";
+  right: 38px;
+}
+
+.icon-sass::after {
+  content: "Sass";
+}
+
+.icon-bootstrap::after {
+  content: "Bootstrap";
+}
+
+.icon-angular::after {
+  content: "Angular";
+  right: 23px;
+}
+
+.icon-git::after {
+  content: "Github";
+  right: 29px;
+}
+
+.icon-js:hover::after,
+.icon-react:hover::after,
+.icon-redux:hover::after,
+.icon-ts:hover::after,
+.icon-html:hover::after,
+.icon-css:hover::after,
+.icon-sass:hover::after,
+.icon-bootstrap:hover::after,
+.icon-angular:hover::after,
+.icon-git:hover::after {
+  animation: glitch 1s infinite;
+  color: yellow;
+}
+
+.icon-react:hover::after {
+  color: #61dafb;
+}
+
+.icon-redux:hover::after {
+  color: #764abc;
+}
+
+.icon-ts:hover::after {
+  color: #007acc;
+}
+
+.icon-html:hover::after {
+  color: #e44d26;
+}
+
+.icon-css:hover::after {
+  color: #2062af;
+}
+
+.icon-sass:hover::after {
+  color: #cc6699;
+}
+
+.icon-bootstrap:hover::after {
+  color: #563d7c;
+}
+
+.icon-angular:hover::after {
+  color: #dd0031;
+}
+
+.icon-git:hover::after {
+  color: #de4c36;
+}
+
+@keyframes glitch {
+  0% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(-2px);
+  }
+  40% {
+    transform: translateY(2px);
+  }
+  60% {
+    transform: translateY(-1px);
+  }
+  80% {
+    transform: translateY(1px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@media screen and (max-width: 414px){
+  .icons-skills .icon-js,
+  .icon-react,
+  .icon-redux,
+  .icon-ts,
+  .icon-html,
+  .icon-css,
+  .icon-sass,
+  .icon-bootstrap,
+  .icon-angular,
+  .icon-git {
+    font-size: 14px;
+    width: 115px;
+  }
+}

@@ -1,0 +1,21 @@
+.alert-container {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  right: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.custom-alert {
+  background-color: #181818;
+  color: white;
+  width: 250px;
+  padding: 4px 8px 16px 16px;
+}
+
+.custom-closed {
+  display: flex;
+  justify-content: flex-end;
+  cursor: pointer;
+}
